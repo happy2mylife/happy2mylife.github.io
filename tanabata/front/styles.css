@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+}
+
+body {
+  background-image: url(./1472188.jpg);
+  background-size: cover;
+}
+
+@keyframes scaleIn {
+  100% {
+    width: 300px;
+  }
+}
+
+@keyframes scaleOut {
+  100% {
+    width: 100px;
+  }
+}
+
+.box {
+  position: absolute;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+
+.sc {
+  animation-name: scaleIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,37 @@
+[debug] [2019-05-31T11:53:01.243Z] ----------------------------------------------------------------------
+[debug] [2019-05-31T11:53:01.244Z] Command:       /Users/kinoko/.nodebrew/node/v8.11.3/bin/node /Users/kinoko/.nodebrew/current/bin/firebase deploy
+[debug] [2019-05-31T11:53:01.245Z] CLI Version:   4.1.1
+[debug] [2019-05-31T11:53:01.245Z] Platform:      darwin
+[debug] [2019-05-31T11:53:01.245Z] Node Version:  v8.11.3
+[debug] [2019-05-31T11:53:01.245Z] Time:          Fri May 31 2019 20:53:01 GMT+0900 (JST)
+[debug] [2019-05-31T11:53:01.245Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-31T11:53:01.251Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-31T11:53:01.252Z] > authorizing via signed-in user
+[debug] [2019-05-31T11:53:01.253Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-31T11:53:01.253Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+
+[debug] [2019-05-31T11:53:01.506Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-31T11:53:01.520Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/tanabata-1e952  
+ 
+[debug] [2019-05-31T11:53:02.493Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-31T11:53:02.493Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/tanabata-1e952/tokens  
+ 
+[debug] [2019-05-31T11:53:03.199Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tanabata-1e952'...
+[info] 
+[info] i  deploying functions
+[debug] [2019-05-31T11:53:04.110Z] TypeError: Path must be a string. Received undefined
+    at assertPath (path.js:28:11)
+    at Object.join (path.js:1236:7)
+    at Config.path (/Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/lib/config.js:166:37)
+    at /Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:68:38
+    at _chain (/Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/lib/deploy/index.js:26:38)
+    at deploy (/Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/lib/deploy/index.js:81:10)
+    at Command._action (/Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/commands/deploy.js:53:12)
+    at /Users/kinoko/.nodebrew/node/v8.11.3/lib/node_modules/firebase-tools/lib/command.js:202:29
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+[error] 
+[error] Error: An unexpected error has occurred.
